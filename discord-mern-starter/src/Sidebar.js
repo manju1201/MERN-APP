@@ -16,17 +16,27 @@ import db, { auth } from './firebase'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+import axios from './axios'
+
 const Sidebar = () => {
     const user = useSelector(selectUser)
     const [channels, setChannels] = useState([])
 
+    const getChannels = () =>{
+        axios.get(`/get/channelList`)
+            .then((res) => {
+                setChannels(res.data)
+            })
+    }
+
     useEffect(() => {
-        db.collection('channels').onSnapshot(snapshot => {
-            setChannels(snapshot.docs.map(doc => ({
-                id: doc.id,
-                channel: doc.data()
-            })))
-        })
+        getChannels()
+        // db.collection('channels').onSnapshot(snapshot => {
+        //     setChannels(snapshot.docs.map(doc => ({
+        //         id: doc.id,
+        //         channel: doc.data()
+        //     })))
+        // })
     }, [])
 
     const handleAddChannel = (e) => {
@@ -60,8 +70,8 @@ const Sidebar = () => {
                 </div>
                 <div className="sidebar__channelsList">
                     {
-                        channels.map(({ id, channel }) => (
-                            <SidebarChannel key={id} id={id} channelName={channel.channelName} />
+                        channels.map(channel => (
+                            <SidebarChannel key={channel.id} id={channel.id} channelName={channel.name} />
                         ))
                     }
                 </div>
