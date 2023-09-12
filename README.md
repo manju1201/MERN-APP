@@ -1,7 +1,7 @@
 # ChatSapce - MERN APP
 
 ## Project Description
-Our previous project, GhettoGroupo- a project management platform, had everything but a direct communication channel. ChatSpace aims at bridging this gap! ChatSpace is a communication platform where people can join/create channels and share messages with others.
+Our previous project, GhettoGroupo- a project management platform, had everything but a direct communication channel. ChatSpace aims to bridge this gap! ChatSpace is a communication platform where people can join/create channels and share messages with others.
 
 ## Key Features
 Seamless Authentication: Users can login/logout without password requirements for known accounts in just one click!
@@ -28,9 +28,9 @@ Open two terminals for both the frontend and backend at the respective folders a
 Now, sign in with your Google account, create/join channels and you can share real-time messages!
 
 Other Contributors
-Nethra Gunti
-Aditi Verma
-Leela Madhuri
-Ramya Anusri
+- Nethra Gunti
+- Aditi Verma
+- Leela Madhuri
+- Ramya Anusri
 
 
