@@ -28,9 +28,9 @@ Open two terminals for both the frontend and backend at the respective folders a
 Now, sign in with your Google account, create/join channels and you can share real-time messages!
 
 Other Contributors
-- Nethra Gunti
-- Aditi Verma
-- Leela Madhuri
-- Ramya Anusri
+* Nethra Gunti
+* Aditi Verma
+* Leela Madhuri
+* Ramya Anusri
 
 
